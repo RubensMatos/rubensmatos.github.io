@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640" role="img" aria-labelledby="title desc">
+  <title id="title">Foto de perfil placeholder</title>
+  <desc id="desc">Avatar com as iniciais RM em gradiente azul.</desc>
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F1C2E"/>
+      <stop offset="1" stop-color="#1FA2FF"/>
+    </linearGradient>
+    <radialGradient id="g2" cx="0.2" cy="0.2" r="1">
+      <stop offset="0" stop-color="#8AD9FF" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#8AD9FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="640" height="640" rx="320" fill="url(#g1)"/>
+  <circle cx="160" cy="150" r="220" fill="url(#g2)"/>
+  <circle cx="520" cy="540" r="200" fill="#0B1322" fill-opacity="0.2"/>
+  <text x="50%" y="53%" text-anchor="middle" font-family="Sora, sans-serif" font-size="230" font-weight="800" fill="#F4FAFF">RM</text>
+</svg>

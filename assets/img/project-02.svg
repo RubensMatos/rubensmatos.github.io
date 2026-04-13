@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="540" viewBox="0 0 920 540" role="img" aria-labelledby="title desc">
+  <title id="title">Mockup de loja virtual</title>
+  <desc id="desc">Ilustracao de e-commerce para card de projeto.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1A1027"/>
+      <stop offset="1" stop-color="#6328A7"/>
+    </linearGradient>
+  </defs>
+  <rect width="920" height="540" rx="24" fill="url(#bg)"/>
+  <rect x="64" y="58" width="792" height="62" rx="16" fill="#C4A5FF" opacity="0.22"/>
+  <rect x="64" y="146" width="504" height="320" rx="18" fill="#B786FF" opacity="0.28"/>
+  <rect x="592" y="146" width="264" height="150" rx="18" fill="#D8B9FF" opacity="0.32"/>
+  <rect x="592" y="316" width="264" height="150" rx="18" fill="#A264F9" opacity="0.4"/>
+  <circle cx="172" cy="222" r="54" fill="#F2E8FF" opacity="0.65"/>
+  <circle cx="312" cy="222" r="54" fill="#F2E8FF" opacity="0.45"/>
+  <circle cx="452" cy="222" r="54" fill="#F2E8FF" opacity="0.3"/>
+</svg>

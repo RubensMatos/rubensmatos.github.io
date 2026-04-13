@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="540" viewBox="0 0 920 540" role="img" aria-labelledby="title desc">
+  <title id="title">Mockup de dashboard</title>
+  <desc id="desc">Ilustracao de dashboard moderno para card de projeto.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#091225"/>
+      <stop offset="1" stop-color="#14345F"/>
+    </linearGradient>
+  </defs>
+  <rect width="920" height="540" rx="24" fill="url(#bg)"/>
+  <rect x="64" y="60" width="792" height="52" rx="16" fill="#1F4C87" opacity="0.8"/>
+  <rect x="64" y="136" width="244" height="330" rx="18" fill="#103260"/>
+  <rect x="332" y="136" width="524" height="158" rx="18" fill="#1D5BA6"/>
+  <rect x="332" y="308" width="252" height="158" rx="18" fill="#17457E"/>
+  <rect x="604" y="308" width="252" height="158" rx="18" fill="#2C86DC"/>
+</svg>
