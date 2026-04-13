@@ -2,10 +2,32 @@
   const menuToggle = document.querySelector('[data-nav-toggle]');
   const menu = document.querySelector('[data-menu]');
   const year = document.querySelector('[data-year]');
+  const trackableLinks = document.querySelectorAll('[data-track-event]');
+
+  const trackEvent = (eventName, payload = {}) => {
+    if (!eventName) return;
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'cta_click',
+      cta_name: eventName,
+      ...payload,
+    });
+  };
 
   if (year) {
     year.textContent = new Date().getFullYear();
   }
+
+  trackableLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      trackEvent(link.dataset.trackEvent, {
+        cta_location: link.dataset.trackLocation || '',
+        cta_type: link.dataset.trackType || 'link',
+        cta_target: link.getAttribute('href') || '',
+      });
+    });
+  });
 
   if (!menuToggle || !menu) return;
 

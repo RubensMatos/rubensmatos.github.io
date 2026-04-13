@@ -50,6 +50,11 @@ a {
   color: inherit;
 }
 
+:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 3px;
+}
+
 .container {
   width: var(--container);
   margin-inline: auto;
@@ -389,6 +394,8 @@ h1 {
 
 .section {
   padding-block: clamp(2.2rem, 4.4vw, 4rem);
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 760px;
 }
 
 .section-title {
@@ -437,6 +444,57 @@ h1 {
   top: 0.42rem;
   width: 10px;
   height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, var(--accent-2), var(--accent));
+}
+
+.services-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.service-card {
+  border: 1px solid #325e8f;
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  background: linear-gradient(160deg, rgba(14, 33, 60, 0.82), rgba(10, 23, 43, 0.9));
+}
+
+.service-card h3 {
+  margin: 0;
+  font-size: 1.03rem;
+}
+
+.service-card p {
+  margin: 0.75rem 0 0;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
+
+.service-list {
+  margin: 0.8rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.service-list li {
+  position: relative;
+  padding-left: 1.15rem;
+  color: #cfe3fb;
+  font-size: 0.82rem;
+}
+
+.service-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.42rem;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: linear-gradient(180deg, var(--accent-2), var(--accent));
 }
@@ -521,6 +579,10 @@ h1 {
 .project-card:focus-within {
   transform: translateY(-4px);
   border-color: #3d7dc1;
+}
+
+.project-card picture {
+  display: block;
 }
 
 .project-cover {
@@ -697,6 +759,50 @@ h1 {
   letter-spacing: 0.02em;
 }
 
+.faq-list {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.faq-item {
+  border: 1px solid #345f8f;
+  border-radius: 14px;
+  background: rgba(10, 24, 43, 0.86);
+  overflow: clip;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.95rem 1rem;
+  font-weight: 700;
+  color: #e4f1ff;
+  font-size: 0.96rem;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  float: right;
+  color: #9cd3ff;
+  font-weight: 700;
+}
+
+.faq-item[open] summary::after {
+  content: "-";
+}
+
+.faq-item p {
+  margin: 0;
+  padding: 0 1rem 0.95rem;
+  color: var(--text-soft);
+  font-size: 0.91rem;
+}
+
 .cta {
   border: 1px solid #3a6aa0;
   border-radius: var(--radius);
@@ -762,6 +868,7 @@ h1 {
 @media (max-width: 980px) {
   .hero-grid,
   .social-grid,
+  .services-grid,
   .differentials-grid,
   .projects,
   .grid-2,

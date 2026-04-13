@@ -1,15 +1,28 @@
 {
-  "name": "Rubens Matos",
+  "name": "Rubens Matos | Desenvolvedor Full Stack",
   "short_name": "Rubens Matos",
+  "description": "Portfolio profissional de Rubens Matos com foco em sites, sistemas web, SEO tecnico e performance.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#070f1f",
   "theme_color": "#070f1f",
   "icons": [
     {
-      "src": "assets/img/favicon.svg",
-      "sizes": "64x64",
-      "type": "image/svg+xml"
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
     }
   ]
 }
