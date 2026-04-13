@@ -762,7 +762,8 @@ h1 {
 }
 
 .section-whatsapp-wrap {
-  margin-top: 1.15rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.25rem;
   display: flex;
   justify-content: center;
 }
