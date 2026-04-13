@@ -20,12 +20,19 @@
   }
 
   trackableLinks.forEach((link) => {
-    link.addEventListener('click', () => {
+    link.addEventListener('click', (event) => {
       trackEvent(link.dataset.trackEvent, {
         cta_location: link.dataset.trackLocation || '',
         cta_type: link.dataset.trackType || 'link',
         cta_target: link.getAttribute('href') || '',
       });
+
+      const href = link.getAttribute('href') || '';
+      const isWhatsappCta = href.includes('wa.me/');
+      if (isWhatsappCta && typeof window.gtag_report_conversion === 'function') {
+        event.preventDefault();
+        window.gtag_report_conversion(href);
+      }
     });
   });
 

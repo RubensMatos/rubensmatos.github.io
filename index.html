@@ -14,6 +14,22 @@
       gtag("js", new Date());
       gtag("config", "AW-17081111894");
     </script>
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-17081111894/5S1mCMff1tIaENaq9NA_",
+          value: 1.0,
+          currency: "BRL",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
 
     <title>Rubens Matos | Desenvolvedor Full Stack para Sites, Sistemas Web e SEO Tecnico</title>
     <meta
