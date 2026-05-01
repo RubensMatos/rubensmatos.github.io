@@ -326,9 +326,9 @@ select {
   width: 100%;
   min-height: 50px;
   border-radius: 999px;
-  border: 0;
-  background: #f7a66d;
-  color: #fff;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
   padding: 0 1rem;
 }
 
@@ -337,7 +337,7 @@ select {
 }
 
 .property-search input::placeholder {
-  color: rgba(255, 255, 255, 0.88);
+  color: var(--ink-soft);
 }
 
 .btn-search {
