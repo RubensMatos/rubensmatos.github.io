@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prime Imoveis | Template para Imobiliarias</title>
+    <meta
+      name="description"
+      content="Template para imobiliarias com busca de imoveis, destaques para compra e aluguel, cards de propriedades e blocos de atendimento comercial."
+    />
+    <meta name="theme-color" content="#ef6b10" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://rubensmatos.github.io/site-imobiliaria/" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/site-imobiliaria/assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
+
+    <div class="topbar">
+      <div class="container topbar-wrap">
+        <div class="topbar-links">
+          <a href="#contato">Area do Cliente</a>
+          <span>|</span>
+          <a href="#anuncie">Anuncie seu imovel</a>
+        </div>
+        <form class="topbar-search" action="#" method="get" role="search">
+          <label class="sr-only" for="busca-topo">Busca rapida</label>
+          <input id="busca-topo" type="search" placeholder="Ex: comprar casa no centro" />
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+
+    <header class="site-header" id="topo">
+      <div class="container header-grid">
+        <a class="brand" href="#topo" aria-label="Prime Imoveis">
+          <span class="brand-mark"></span>
+          <span class="brand-copy">
+            <strong>Prime</strong>
+            <small>Imoveis</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-nav-toggle
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="menu" id="menu" aria-label="Principal" data-menu>
+          <a href="#comprar">Para comprar</a>
+          <a href="#anuncie">Anuncie seu imovel</a>
+          <a href="#alugar">Para alugar</a>
+          <a href="#atendimento">Para te ajudar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero">
+        <div class="container hero-wrap">
+          <div class="hero-copy">
+            <p class="eyebrow">Template para imobiliarias</p>
+            <h1>A carteira certa para destacar imoveis e gerar atendimento qualificado.</h1>
+            <p>
+              Estrutura inspirada em grandes imobiliarias: busca logo na abertura, filtros
+              comerciais, seções por objetivo de compra e aluguel e cards completos para
+              propriedades em destaque.
+            </p>
+          </div>
+
+          <div class="search-panel">
+            <div class="search-tabs">
+              <button class="is-active" type="button">Busca de Imoveis</button>
+              <button type="button">Busca por Cod./Ref.</button>
+              <button type="button">Busca por Condominio</button>
+            </div>
+
+            <form class="property-search" action="#" method="get">
+              <label>
+                <span class="sr-only">Operacao</span>
+                <select>
+                  <option>Operacao</option>
+                  <option>Comprar</option>
+                  <option>Alugar</option>
+                </select>
+              </label>
+              <label>
+                <span class="sr-only">Cidade</span>
+                <select>
+                  <option>Cidade</option>
+                  <option>Uberlandia</option>
+                  <option>Araguari</option>
+                </select>
+              </label>
+              <label>
+                <span class="sr-only">Tipo</span>
+                <select>
+                  <option>Tipo</option>
+                  <option>Casa</option>
+                  <option>Apartamento</option>
+                  <option>Cobertura</option>
+                </select>
+              </label>
+              <label>
+                <span class="sr-only">Bairro</span>
+                <select>
+                  <option>Bairro</option>
+                  <option>Centro</option>
+                  <option>Jardim Karaiba</option>
+                  <option>Morada da Colina</option>
+                </select>
+              </label>
+              <label>
+                <span class="sr-only">Finalidade</span>
+                <select>
+                  <option>Finalidade</option>
+                  <option>Residencial</option>
+                  <option>Comercial</option>
+                </select>
+              </label>
+              <label>
+                <span class="sr-only">Dormitorios</span>
+                <select>
+                  <option>Dormitorios</option>
+                  <option>1+</option>
+                  <option>2+</option>
+                  <option>3+</option>
+                </select>
+              </label>
+              <label>
+                <span class="sr-only">Garagem</span>
+                <select>
+                  <option>Garagem</option>
+                  <option>1 vaga</option>
+                  <option>2 vagas</option>
+                  <option>3 vagas</option>
+                </select>
+              </label>
+              <label>
+                <span class="sr-only">Valor minimo</span>
+                <input type="text" placeholder="Valor Min." />
+              </label>
+              <label>
+                <span class="sr-only">Valor maximo</span>
+                <input type="text" placeholder="Valor Max." />
+              </label>
+              <button class="btn-search" type="submit">Pesquisar</button>
+            </form>
+          </div>
+
+          <div class="hero-banner">
+            <div class="hero-banner-copy">
+              <span class="tag">Selecao da semana</span>
+              <h2>Imoveis para comprar, alugar e investir em uma vitrine mais clara.</h2>
+              <p>
+                Um template com linguagem comercial forte, ideal para destacar bairros,
+                condominio, valor e diferenciais em uma navegacao objetiva.
+              </p>
+            </div>
+            <img
+              src="/site-imobiliaria/assets/img/hero-house.jpg"
+              alt="Casa moderna com fachada imponente e paisagismo."
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section highlight-categories" id="comprar">
+        <div class="container">
+          <div class="section-head center">
+            <p class="eyebrow">Imoveis para comprar</p>
+            <h2>Encontre os melhores perfis de imovel conforme a necessidade do cliente.</h2>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card">
+              <img src="/site-imobiliaria/assets/img/house-garden.jpg" alt="Casa com jardim e fachada ampla." />
+              <div class="category-overlay">
+                <h3>Casas com Quintal</h3>
+                <div class="category-actions">
+                  <a href="#comprar">Comprar</a>
+                  <a href="#alugar">Alugar</a>
+                </div>
+              </div>
+            </article>
+            <article class="category-card">
+              <img src="/site-imobiliaria/assets/img/apartment-tower.jpg" alt="Edificio residencial alto." />
+              <div class="category-overlay">
+                <h3>Apartamentos com Portaria</h3>
+                <div class="category-actions">
+                  <a href="#comprar">Comprar</a>
+                  <a href="#alugar">Alugar</a>
+                </div>
+              </div>
+            </article>
+            <article class="category-card">
+              <img src="/site-imobiliaria/assets/img/open-living.jpg" alt="Sala moderna integrada." />
+              <div class="category-overlay">
+                <h3>Imoveis com Ambientes Integrados</h3>
+                <div class="category-actions">
+                  <a href="#comprar">Comprar</a>
+                  <a href="#alugar">Alugar</a>
+                </div>
+              </div>
+            </article>
+            <article class="category-card">
+              <img src="/site-imobiliaria/assets/img/luxury-interior.jpg" alt="Interior sofisticado com vista urbana." />
+              <div class="category-overlay">
+                <h3>Alto Padrao em Regioes Nobres</h3>
+                <div class="category-actions">
+                  <a href="#comprar">Comprar</a>
+                  <a href="#alugar">Alugar</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section service-strip" id="atendimento">
+        <div class="container service-grid">
+          <article>
+            <span>Compra guiada</span>
+            <strong>atendimento para quem quer encontrar o imovel ideal com agilidade</strong>
+          </article>
+          <article>
+            <span>Locacao</span>
+            <strong>vitrine pronta para destacar contratos residenciais e comerciais</strong>
+          </article>
+          <article>
+            <span>Captacao</span>
+            <strong>bloco estrategico para proprietarios que desejam anunciar</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section property-showcase">
+        <div class="container">
+          <div class="section-head center">
+            <p class="eyebrow">Quer comprar o imovel ideal?</p>
+            <h2>Confira uma selecao de propriedades com foco em conversa e conversao.</h2>
+          </div>
+
+          <div class="property-grid">
+            <article class="property-card">
+              <div class="property-media">
+                <span class="property-code">Cod. 43211</span>
+                <img src="/site-imobiliaria/assets/img/house-garden.jpg" alt="Casa ampla com area externa." />
+                <div class="property-price">Comprar R$ 3.800.000,00</div>
+              </div>
+              <div class="property-body">
+                <h3>Casa disponivel para venda no bairro Jardim Botanico</h3>
+                <p class="property-location">Jardim Botanico - Uberlandia/MG</p>
+                <p>
+                  Projeto contemporaneo com area gourmet, jardim privativo, ambientes amplos e
+                  fachada marcante para clientes de medio e alto padrao.
+                </p>
+                <ul class="property-specs">
+                  <li><strong>5</strong><span>Dorm.</span></li>
+                  <li><strong>4</strong><span>Suites</span></li>
+                  <li><strong>6</strong><span>Banho</span></li>
+                  <li><strong>4</strong><span>Garagens</span></li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="property-card">
+              <div class="property-media">
+                <span class="property-code">Cod. 29289</span>
+                <img src="/site-imobiliaria/assets/img/modern-building.jpg" alt="Edificio residencial moderno." />
+                <div class="property-price">Comprar R$ 2.650.000,00</div>
+              </div>
+              <div class="property-body">
+                <h3>Cobertura disponivel para venda no bairro Copacabana</h3>
+                <p class="property-location">Copacabana - Uberlandia/MG</p>
+                <p>
+                  Cobertura linear com area externa generosa, vista aberta, condominio novo e
+                  planta pronta para personalizacao de acabamento.
+                </p>
+                <ul class="property-specs">
+                  <li><strong>3</strong><span>Dorm.</span></li>
+                  <li><strong>3</strong><span>Suites</span></li>
+                  <li><strong>4</strong><span>Banho</span></li>
+                  <li><strong>3</strong><span>Garagens</span></li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="property-card">
+              <div class="property-media">
+                <span class="property-code">Cod. 42714</span>
+                <img src="/site-imobiliaria/assets/img/luxury-interior.jpg" alt="Interior sofisticado de apartamento." />
+                <div class="property-price">Comprar R$ 1.150.000,00</div>
+              </div>
+              <div class="property-body">
+                <h3>Apartamento de alto padrao no bairro Cazeca</h3>
+                <p class="property-location">Cazeca - Uberlandia/MG</p>
+                <p>
+                  Interior refinado, marcenaria planejada, iluminacao cenica e localizacao
+                  privilegiada proxima aos principais eixos comerciais da cidade.
+                </p>
+                <ul class="property-specs">
+                  <li><strong>3</strong><span>Dorm.</span></li>
+                  <li><strong>1</strong><span>Suite</span></li>
+                  <li><strong>2</strong><span>Banho</span></li>
+                  <li><strong>3</strong><span>Garagens</span></li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section dual-blocks" id="alugar">
+        <div class="container dual-grid">
+          <article class="dual-card dark">
+            <p class="eyebrow light">Para alugar</p>
+            <h2>Locacao com foco em velocidade de atendimento e filtros objetivos.</h2>
+            <p>
+              Espaco ideal para campanhas de locacao, estoque de apartamentos mobiliados,
+              salas comerciais e oportunidades com entrada imediata.
+            </p>
+            <a href="#contato">Quero atendimento</a>
+          </article>
+
+          <article class="dual-card light" id="anuncie">
+            <p class="eyebrow">Anuncie seu imovel</p>
+            <h2>Use este bloco para captacao de proprietarios e oportunidades exclusivas.</h2>
+            <ul class="benefit-list">
+              <li>Fotos profissionais e destaque na vitrine</li>
+              <li>Equipe comercial preparada para compra e locacao</li>
+              <li>Paginas de bairro, condominio e perfil de cliente</li>
+              <li>Atendimento por WhatsApp e formularios dedicados</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section neighborhoods">
+        <div class="container">
+          <div class="section-head split">
+            <div>
+              <p class="eyebrow">Bairros em evidência</p>
+              <h2>Cards prontos para destacar regiao, estilo de vida e faixa de ticket.</h2>
+            </div>
+            <a href="#topo">Voltar ao topo</a>
+          </div>
+
+          <div class="neighborhood-grid">
+            <article class="neighborhood-card">
+              <img src="/site-imobiliaria/assets/img/living-room.jpg" alt="Sala moderna com tons neutros." />
+              <div>
+                <strong>Jardim Karaiba</strong>
+                <span>alto padrao, praticidade e vida urbana</span>
+              </div>
+            </article>
+            <article class="neighborhood-card">
+              <img src="/site-imobiliaria/assets/img/vertical-building.jpg" alt="Predio com arquitetura vertical." />
+              <div>
+                <strong>Santa Monica</strong>
+                <span>opcoes residenciais, estudantis e investimento</span>
+              </div>
+            </article>
+            <article class="neighborhood-card">
+              <img src="/site-imobiliaria/assets/img/open-living.jpg" alt="Ambiente integrado com escritorio e sala." />
+              <div>
+                <strong>Morada da Colina</strong>
+                <span>familias, condominio e metragens amplas</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contato">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark"></span>
+            <span class="brand-copy">
+              <strong>Prime</strong>
+              <small>Imoveis</small>
+            </span>
+          </div>
+          <p>
+            Template conceitual para a rota <code>/site-imobiliaria</code>, inspirado na
+            estrutura comercial de grandes imobiliarias.
+          </p>
+        </div>
+
+        <div>
+          <h3>Creditos de imagem</h3>
+          <ul class="credits">
+            <li><a href="https://www.pexels.com/photo/modern-house-exterior-design-8134821/">Hero por Max Vakhtbovych</a></li>
+            <li><a href="https://www.pexels.com/photo/photo-of-a-house-exterior-5177211/">Casa com jardim por Camilo</a></li>
+            <li><a href="https://www.pexels.com/photo/photograph-of-an-apartment-building-s-exterior-6245946/">Torre por Expect Best</a></li>
+            <li><a href="https://www.pexels.com/photo/luxury-home-interior-16112681/">Interior de luxo por abdul habib</a></li>
+            <li><a href="https://www.pexels.com/photo/modern-living-room-9976128/">Sala moderna por Jonathan Borba</a></li>
+            <li><a href="https://www.pexels.com/photo/modern-residential-apartment-building-exterior-34360410/">Edificio moderno por SHOX ART</a></li>
+            <li><a href="https://www.pexels.com/photo/a-modern-living-room-7166931/">Sala integrada por Max Vakhtbovych</a></li>
+            <li><a href="https://www.pexels.com/photo/apartment-building-exterior-16945100/">Predio vertical por Chris Hunter</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/site-imobiliaria/assets/js/main.js"></script>
+  </body>
+</html>
