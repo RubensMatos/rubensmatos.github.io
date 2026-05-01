@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard Atendimento WhatsApp | Template</title>
+    <meta
+      name="description"
+      content="Template de dashboard para sistema de atendimento via WhatsApp com sidebar, lista de conversas, area de chat, status e acoes operacionais."
+    />
+    <meta name="theme-color" content="#f6faf6" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://rubensmatos.github.io/dashboard-atendimento-whatsapp/" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/dashboard-atendimento-whatsapp/assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteudo principal</a>
+
+    <main class="app-shell" id="conteudo">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-mark">K</div>
+          <div class="brand-copy">
+            <strong>KiBarato</strong>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Principal">
+          <a class="nav-item" href="#visao-geral">
+            <span class="nav-icon">▦</span>
+            <span>Visao Geral</span>
+          </a>
+          <a class="nav-item is-active" href="#conversas">
+            <span class="nav-icon">◧</span>
+            <span>Conversas</span>
+          </a>
+
+          <div class="nav-group">
+            <h2>CRM</h2>
+            <a href="#crm">Contatos</a>
+            <a href="#crm">Funil</a>
+            <a href="#crm">Etiquetas</a>
+          </div>
+
+          <div class="nav-group">
+            <h2>Operacao</h2>
+            <a href="#operacao">Atendentes</a>
+            <a href="#operacao">Filas</a>
+            <a href="#operacao">SLA</a>
+            <a href="#operacao">Supervisao</a>
+          </div>
+
+          <div class="nav-group">
+            <h2>Automacoes</h2>
+            <a href="#automacoes">Fluxos</a>
+            <a href="#automacoes">Bot e handoff</a>
+            <a href="#automacoes">Respostas rapidas</a>
+            <a href="#automacoes">Gatilhos</a>
+          </div>
+
+          <div class="nav-group">
+            <h2>Campanhas</h2>
+            <a href="#campanhas">Disparos</a>
+            <a href="#campanhas">Jornadas</a>
+            <a href="#campanhas">Modelos</a>
+          </div>
+
+          <div class="nav-group">
+            <h2>WhatsApp API</h2>
+            <a href="#api">Numeros</a>
+            <a href="#api">Templates</a>
+            <a href="#api">Webhooks</a>
+            <a href="#api">Saude</a>
+          </div>
+
+          <div class="nav-group">
+            <h2>Relatorios</h2>
+            <a href="#relatorios">Visao geral</a>
+            <a href="#relatorios">Equipe</a>
+            <a href="#relatorios">Atendimento</a>
+            <a href="#relatorios">Conversao</a>
+          </div>
+
+          <div class="nav-group">
+            <h2>Configuracoes</h2>
+            <a href="#configuracoes">Empresa</a>
+            <a href="#configuracoes">Equipes</a>
+            <a href="#configuracoes">Acessos</a>
+            <a href="#configuracoes">Canais</a>
+            <a href="#configuracoes">Preferencias</a>
+          </div>
+
+          <a class="nav-item" href="#ajuda">
+            <span class="nav-icon">◌</span>
+            <span>Ajuda</span>
+          </a>
+        </nav>
+
+        <button class="logout-button" type="button">Logout</button>
+      </aside>
+
+      <section class="workspace">
+        <header class="topbar">
+          <div class="topbar-title">
+            <span>WHATSAPP BUSINESS API</span>
+            <strong>Conversas</strong>
+          </div>
+
+          <div class="topbar-search">
+            <span class="search-icon">⌕</span>
+            <input type="search" placeholder="Buscar conversa, numero ou etiqueta" />
+          </div>
+
+          <div class="user-card">
+            <div class="user-avatar">CS</div>
+            <div>
+              <strong>Camila Santos</strong>
+              <span>Supervisora de atendimento</span>
+            </div>
+            <button type="button" aria-label="Sair">↪</button>
+          </div>
+        </header>
+
+        <div class="content-grid">
+          <section class="conversation-list" id="conversas">
+            <div class="panel-header">
+              <h1>Lista de conversas</h1>
+              <p>Ordenada por atualizacao mais recente</p>
+            </div>
+
+            <div class="inner-search">
+              <span>⌕</span>
+              <input type="search" placeholder="Pesquisar ou iniciar nova conversa" />
+            </div>
+
+            <div class="filters">
+              <button class="chip active" type="button">Tudo</button>
+              <button class="chip" type="button">Favoritas</button>
+              <button class="chip" type="button">Comercial</button>
+              <button class="chip" type="button">Suporte</button>
+            </div>
+
+            <div class="archive-row">
+              <span>◔</span>
+              <strong>Arquivadas</strong>
+              <b>3</b>
+            </div>
+
+            <article class="conversation-item is-selected">
+              <div class="avatar">RM</div>
+              <div class="conversation-body">
+                <div class="conversation-top">
+                  <strong>Rubens Matos</strong>
+                  <span>18:39</span>
+                </div>
+                <p>Preciso de uma proposta com integracao para equipe comercial.</p>
+                <div class="meta-tags">
+                  <span class="tag lead">Lead quente</span>
+                  <span>Comercial</span>
+                </div>
+                <small>Sem responsavel</small>
+              </div>
+              <div class="unread">2</div>
+            </article>
+
+            <article class="conversation-item">
+              <div class="avatar">PK</div>
+              <div class="conversation-body">
+                <div class="conversation-top">
+                  <strong>Programacao Kibara</strong>
+                  <span>18:31</span>
+                </div>
+                <p>Conseguimos iniciar a configuracao do numero principal.</p>
+                <div class="meta-tags">
+                  <span class="tag project">Projeto</span>
+                  <span>Implantacao</span>
+                  <span>Camila Santos</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="conversation-item">
+              <div class="avatar">AT</div>
+              <div class="conversation-body">
+                <div class="conversation-top">
+                  <strong>Amorim Transportes</strong>
+                  <span>18:12</span>
+                </div>
+                <p>Quero saber sobre o plano com multiplos atendentes.</p>
+                <div class="meta-tags">
+                  <span class="tag commercial">Comercial</span>
+                  <span>Vendas</span>
+                  <span>Bruno Costa</span>
+                </div>
+              </div>
+              <div class="unread">3</div>
+            </article>
+
+            <article class="conversation-item">
+              <div class="avatar">GV</div>
+              <div class="conversation-body">
+                <div class="conversation-top">
+                  <strong>Guilherme Vieira</strong>
+                  <span>17:58</span>
+                </div>
+                <p>Ainda nao recebi a confirmacao no WhatsApp.</p>
+                <div class="meta-tags">
+                  <span class="tag support">Suporte</span>
+                  <span>Pos-venda</span>
+                </div>
+                <small>Jessica Lima</small>
+              </div>
+              <div class="unread">1</div>
+            </article>
+
+            <article class="conversation-item">
+              <div class="avatar">ZP</div>
+              <div class="conversation-body">
+                <div class="conversation-top">
+                  <strong>Zenilda Pereira</strong>
+                  <span>17:41</span>
+                </div>
+                <p>Pode transferir para o financeiro, por favor?</p>
+                <div class="meta-tags">
+                  <span class="tag finance">Financeiro</span>
+                  <span>Financeiro</span>
+                </div>
+                <small>Fila automatica</small>
+              </div>
+            </article>
+
+            <article class="conversation-item">
+              <div class="avatar">IA</div>
+              <div class="conversation-body">
+                <div class="conversation-top">
+                  <strong>Isaac Arco</strong>
+                  <span>16:54</span>
+                </div>
+                <p>Estamos prontos para ativar as respostas rapidas.</p>
+                <div class="meta-tags">
+                  <span class="tag onboarding">Onboarding</span>
+                  <span>Implantacao</span>
+                </div>
+                <small>Camila Santos</small>
+              </div>
+            </article>
+          </section>
+
+          <section class="chat-panel">
+            <header class="chat-header">
+              <div class="chat-contact">
+                <div class="avatar large">RM</div>
+                <div>
+                  <strong>Rubens Matos</strong>
+                  <span>+55 11 99888-7766 • Online agora</span>
+                </div>
+              </div>
+
+              <div class="chat-status">
+                <span class="pill waiting">Aguardando atribuicao</span>
+                <span>Comercial • Sem responsavel</span>
+              </div>
+
+              <div class="chat-actions">
+                <button type="button" aria-label="Etiqueta">🏷</button>
+                <button type="button" aria-label="Mais">⋯</button>
+              </div>
+            </header>
+
+            <div class="messages">
+              <div class="day-separator">Hoje</div>
+
+              <article class="message incoming">
+                <p>Oi, vi que voces trabalham com atendimento por WhatsApp para multiplos atendentes.</p>
+                <time>18:32</time>
+              </article>
+
+              <article class="message incoming">
+                <p>Quero entender se consigo separar comercial, suporte e financeiro no mesmo numero.</p>
+                <time>18:33</time>
+              </article>
+
+              <article class="message outgoing">
+                <p>Consegue sim. A estrutura pode ter filas, responsaveis, etiquetas e transferencia entre equipes.</p>
+                <time>18:35</time>
+              </article>
+
+              <article class="message incoming">
+                <p>Perfeito. Tambem preciso de uma tela de conversa bem parecida com o WhatsApp para o time nao se perder.</p>
+                <time>18:39</time>
+              </article>
+            </div>
+
+            <div class="quick-actions">
+              <button type="button">Enviar apresentacao</button>
+              <button type="button">Criar oportunidade</button>
+              <button type="button">Marcar lead quente</button>
+              <button type="button">Transferir para vendas</button>
+            </div>
+
+            <form class="composer" action="#" method="post">
+              <button type="button" aria-label="Anexo">📎</button>
+              <button type="button" aria-label="Audio">🎤</button>
+              <input
+                type="text"
+                placeholder="Digite uma mensagem, use um modelo ou registre uma nota interna..."
+              />
+              <button class="send-button" type="submit" aria-label="Enviar">➤</button>
+            </form>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="/dashboard-atendimento-whatsapp/assets/js/main.js"></script>
+  </body>
+</html>
