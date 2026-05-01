@@ -450,34 +450,65 @@ input {
 }
 
 .department-card {
+  position: relative;
   text-decoration: none;
   background: #fff;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 20px;
-  padding: 1.2rem 1rem;
-  display: grid;
-  justify-items: center;
-  gap: 0.85rem;
-  color: var(--ink);
-  box-shadow: 0 4px 14px rgba(22, 61, 122, 0.05);
-}
-
-.department-icon {
-  width: 74px;
-  height: 74px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
+  min-height: 170px;
+  padding: 1rem;
+  display: flex;
+  align-items: end;
   color: #fff;
-  font-weight: 800;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 10px 24px rgba(22, 61, 122, 0.12);
 }
 
-.blue { background: linear-gradient(135deg, #00a3ff, #006bff); }
-.navy { background: linear-gradient(135deg, #223f7a, #0f254b); }
-.yellow { background: linear-gradient(135deg, #ffd400, #ffb703); color: #1d2c3d; }
-.cyan { background: linear-gradient(135deg, #00c2ff, #03a0e8); }
-.pink { background: linear-gradient(135deg, #ff66a8, #ff4d8d); }
-.dark { background: linear-gradient(135deg, #353f54, #161d29); }
+.department-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 27, 52, 0.08) 0%, rgba(11, 28, 52, 0.72) 100%);
+}
+
+.department-card strong {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(8px);
+  font-size: 1rem;
+}
+
+.department-card-celulares {
+  background-image: url("/loja-virtual/assets/img/categories/celulares.jpg");
+}
+
+.department-card-tv {
+  background-image: url("/loja-virtual/assets/img/categories/tv-video.jpg");
+}
+
+.department-card-eletro {
+  background-image: url("/loja-virtual/assets/img/categories/eletro.jpg");
+}
+
+.department-card-informatica {
+  background-image: url("/loja-virtual/assets/img/categories/informatica.jpg");
+}
+
+.department-card-moveis {
+  background-image: url("/loja-virtual/assets/img/categories/moveis.jpg");
+}
+
+.department-card-beleza {
+  background-image: url("/loja-virtual/assets/img/categories/beleza.jpg");
+}
 
 .promo-band-grid {
   display: grid;
