@@ -279,10 +279,15 @@ a { color: inherit; }
   flex-direction: column;
   overflow-x: hidden;
   overflow-y: auto;
+  scrollbar-gutter: stable;
 }
 
 .panel-header {
   padding: 1rem 1rem 0.65rem;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: rgba(255,255,255,0.96);
 }
 
 .panel-header h1 {
@@ -306,6 +311,9 @@ a { color: inherit; }
   border: 1px solid var(--line);
   border-radius: 16px;
   background: #fff;
+  position: sticky;
+  top: 4.45rem;
+  z-index: 2;
 }
 
 .inner-search input {
@@ -429,8 +437,8 @@ a { color: inherit; }
 }
 
 .chat-header {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
   padding: 1rem 1.15rem;
@@ -636,7 +644,8 @@ a { color: inherit; }
   }
 
   .chat-header {
-    grid-template-columns: 1fr;
+    align-items: flex-start;
+    flex-wrap: wrap;
   }
 
   .chat-status {
