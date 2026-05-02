@@ -257,7 +257,7 @@ a { color: inherit; }
 
 .content-grid {
   display: grid;
-  grid-template-columns: 302px 1fr;
+  grid-template-columns: 348px 1fr;
   gap: 0;
   min-height: 0;
   border: 1px solid var(--line);
@@ -607,7 +607,7 @@ a { color: inherit; }
   }
 
   .content-grid {
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 332px 1fr;
   }
 }
 
